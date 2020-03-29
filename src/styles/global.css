@@ -1,0 +1,42 @@
+.background{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    background: rgb(250, 250, 255);
+}
+#___gatsby > *{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+  
+.header-icon{
+    height: 4vh;
+    width: auto;
+    margin: 0;
+    padding: 0 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: invert(100%);
+}
+.header-icon:hover{
+    filter: invert(0%);
+}
+
+.logo{
+    margin: 0;
+    height: 25px;
+}
+
+@media only screen and (max-width: 760px){
+    .background{
+      padding: 0;
+      background: #fff;
+    }
+    .particle-js{
+        display: none;
+    }
+  }

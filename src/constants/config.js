@@ -1,0 +1,7 @@
+const NUMBER_OF_QUESTIONS = 10
+const TIME_FOR_EACH_QUESTION = 15
+
+export default {
+    NUMBER_OF_QUESTIONS,
+    TIME_FOR_EACH_QUESTION
+}
