@@ -7,5 +7,275 @@
             "real madrid",
             "juventus"
         ]
+    },
+    {
+        "player_name": "alvaro morata",
+        "teams": [
+            "real madrid",
+            "juventus",
+            "real madrid",
+            "chelsea",
+            "ath madrid"
+        ]
+    },
+    {
+        "player_name": "antoine griezmann",
+        "teams": [
+            "sociedad",
+            "ath madrid",
+            "barcelona"
+        ]
+    },
+    {
+        "player_name": "gonzalo higuain",
+        "teams": [
+            "real madrid",
+            "napoli",
+            "juventus",
+            "milan",
+            "chelsea",
+            "juventus"
+        ]
+    },
+    {
+        "player_name": "mohamed salah",
+        "teams": [
+            "chelsea",
+            "fiorentina",
+            "roma",
+            "liverpool"
+        ]
+    },
+    {
+        "player_name": "toni kroos",
+        "teams": [
+            "bayern munich",
+            "leverkusen",
+            "bayern munich",
+            "real madrid"
+        ]
+    },
+    {
+        "player_name": "alexis sanchez",
+        "teams": [
+            "udinese",
+            "barcelona",
+            "arsenal",
+            "man united",
+            "inter"
+        ]
+    },
+    {
+        "player_name": "neymar",
+        "teams": [
+            "santos fc",
+            "barcelona",
+            "paris sg"
+        ]
+    },
+    {
+        "player_name": "mario balotelli",
+        "teams": [
+            "inter",
+            "man city",
+            "milan",
+            "liverpool",
+            "milan",
+            "nice",
+            "marseille",
+            "brescia"
+        ]
+    },
+    {
+        "player_name": "zlatan ibrahimovic",
+        "teams": [
+            "ajax",
+            "juventus",
+            "inter",
+            "barcelona",
+            "milan",
+            "paris sg",
+            "man united",
+            "l.a. galaxy",
+            "milan"
+        ]
+    },
+    {
+        "player_name": "frank lampard",
+        "teams": [
+            "west ham",
+            "chelsea",
+            "man city",
+            "new york city"
+        ]
+    },
+    {
+        "player_name": "david luiz",
+        "teams": [
+            "benfica",
+            "chelsea",
+            "paris sg",
+            "chelsea",
+            "arsenal"
+        ]
+    },
+    {
+        "player_name": "xabi alonso",
+        "teams": [
+            "sociedad",
+            "eibar",
+            "liverpool",
+            "real madrid",
+            "bayern munich"
+        ]
+    },
+    {
+        "player_name": "arjen robben",
+        "teams": [
+            "chelsea",
+            "real madrid",
+            "bayern munich"
+        ]
+    },
+    {
+        "player_name": "mario mandzukic",
+        "teams": [
+            "wolfsburg",
+            "bayern munich",
+            "ath madrid",
+            "juventus"
+        ]
+    },
+    {
+        "player_name": "fernando torres",
+        "teams": [
+            "ath madrid",
+            "liverpool",
+            "chelsea",
+            "milan",
+            "ath madrid"
+        ]
+    },
+    {
+        "player_name": "samuel eto'o",
+        "teams": [
+            "real madrid",
+            "espanol",
+            "mallorca",
+            "barcelona",
+            "inter",
+            "chelsea",
+            "everton",
+            "sampdoria"
+        ]
+    },
+    {
+        "player_name": "cesc fabregas",
+        "teams": [
+            "arsenal",
+            "barcelona",
+            "chelsea",
+            "monaco"
+        ]
+    },
+    {
+        "player_name": "mesut ozil",
+        "teams": [
+            "schalke 04",
+            "werder bremen",
+            "real madrid",
+            "arsenal"
+        ]
+    },
+    {
+        "player_name": "romelu lukaku",
+        "teams": [
+            "chelsea",
+            "everton",
+            "man united",
+            "inter"
+        ]
+    },
+    {
+        "player_name": "zinedine zidane",
+        "teams": [
+            "bordeaux",
+            "juventus",
+            "real madrid"
+        ]
+    },
+    {
+        "player_name": "kaka",
+        "teams": [
+            "sao paulo",
+            "milan",
+            "real madrid",
+            "milan",
+            "sao paulo",
+            "orlando city"
+        ]
+    },
+    {
+        "player_name": "javier hernandez",
+        "teams": [
+            "man united",
+            "real madrid",
+            "leverkusen",
+            "west ham",
+            "sevilla",
+            "l.a. galaxy"
+        ]
+    },
+    {
+        "player_name": "eden hazard",
+        "teams": [
+            "lille",
+            "chelsea",
+            "real madrid"
+        ]
+    },
+    {
+        "player_name": "thibaut courtois",
+        "teams": [
+            "ath madrid",
+            "chelsea",
+            "real madrid"
+        ]
+    },
+    {
+        "player_name": "mario gotze",
+        "teams": [
+            "dortmund",
+            "bayern munich",
+            "dortmund"
+        ]
+    },
+    {
+        "player_name": "pierre-emerick aubameyang",
+        "teams": [
+            "milan",
+            "dijon",
+            "lille",
+            "monaco",
+            "st etienne",
+            "dortmund",
+            "arsenal"
+        ]
+    },
+    {
+        "player_name": "henrikh mkhitaryan",
+        "teams": [
+            "dortmund",
+            "man united",
+            "arsenal",
+            "roma"
+        ]
+    },
+    {
+        "player_name": "ilkay gundogan",
+        "teams": [
+            "dortmund",
+            "man city"
+        ]
     }
 ]
