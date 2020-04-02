@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 
 const Footer = () => (
@@ -10,7 +9,7 @@ const Footer = () => (
       textAlign: `center`
     }}
   >
-    © {new Date().getFullYear()}, Built with Love &hearts;
+    Built with Love &hearts;
   </footer>
 )
 

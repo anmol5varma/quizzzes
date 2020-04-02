@@ -1,0 +1,29 @@
+.barWrapper{
+    display: flex;
+    background: #ddd;
+    border-radius: 50px;
+}
+
+.bar{
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.activeBar{
+    background: #2b8a9d;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quesTrack{
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background: #fff;
+}

@@ -2,11 +2,16 @@ import React, { Component } from "react"
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 import Layout from "../components/layout"
+import ProgressBar from "../components/progress-bar"
 import SEO from "../components/seo"
-import styles from "../styles/index.module.css"
 import Constants from "../constants/config"
-import data from "../jsons/transfer.json"
+import { GetQuizQuestionIndexes } from "../utils/style"
+import list from "../jsons/transfer.json"
 import logo from "../jsons/team-logo.json"
+import styles from "../styles/index.module.css"
+
+const selectedIndex = GetQuizQuestionIndexes(Constants.NUMBER_OF_QUESTIONS, list.length)
+const data = selectedIndex.map(value => list[value])
 
 const renderTime = value => {
   if (value === 0) {
@@ -32,7 +37,7 @@ class Index extends Component {
       <SEO title="Home" />
       <div className={styles.wrapperBox}>
         <div className={styles.progressWrapper}>
-          
+          <ProgressBar current={this.state.currentQuestion + 1} total={data.length} />
         </div>
         <div className={styles.contentWrapper}>
           <span className={styles.heading}>Who am I?</span>
@@ -47,13 +52,17 @@ class Index extends Component {
             }
           </div>
           <CountdownCircleTimer
-            isPlaying
+            // isPlaying
             durationSeconds={Constants.TIME_FOR_EACH_QUESTION}
             colors={[["#00AA00", 0.5], ["#A30000"]]}
             renderTime={renderTime}
             strokeWidth={5}
             size={140}
-            onComplete={() => [false, 1000]}
+            onComplete={() => {
+              setTimeout(() => this.goToNextQuestion(), Constants.TIME_INTERVAL_BETWEEN_QUESTIONS)
+              return [false, Constants.TIME_INTERVAL_BETWEEN_QUESTIONS]
+            }}
+            key={this.state.currentQuestion}
           />
           <div className={styles.inputWrapper}>
             I am
@@ -91,8 +100,6 @@ class Index extends Component {
   }
 
   render() {
-    console.log(Constants);
-    
     return this.renderPage();
   }
 }
