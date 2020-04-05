@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import { GetPercentage } from "../utils/style"
-import styles from "./progress-bar.module.css"
+import styles from "../styles/progress-bar.module.css"
 
 const generateCircles = (count, key) => (
     <>

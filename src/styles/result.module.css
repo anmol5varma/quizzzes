@@ -1,0 +1,80 @@
+.title{
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+	color: #2b8a9d;
+	margin-bottom: 15px;
+}
+
+/* right arrow */
+.right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #2b8a9d;
+	border-bottom: 10px solid transparent;
+	margin-right: 15px;
+}
+
+.bar{
+	height: 3px;
+	width: 15px;
+	background: #2b8a9d;
+	margin-top: -1px;
+	margin-left: 10px;
+}
+
+/* Team logo */
+.teamLogo{
+	height: 5vh;
+	margin: 2px;
+	filter:drop-shadow(5px 5px 5px #666666);
+	-webkit-filter:drop-shadow(5px 5px 5px #666666);
+}
+
+.resultWrapper{
+	padding: 20px;
+}
+
+.logoList{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.answerRows{
+	padding: 20px 0;
+}
+
+.answerWrapper{
+	display: flex;
+	justify-content: space-between;	
+}
+
+.answerWrapper > div{
+	display: flex;
+	align-items: center;
+}
+
+.answerWrapper span{
+	text-transform: capitalize;
+}
+
+.buttonWrapper{
+	text-align: center;
+}
+
+.status{
+	height: 25px;
+	margin: 0;
+}
+
+.shareButtonWrapper > div > *{
+	margin: 0 5px;
+}
+
+@media only screen and (max-width: 760px){
+	.answerWrapper{
+		display: block;
+	}
+}
