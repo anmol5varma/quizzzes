@@ -8,7 +8,7 @@ import Result from "./result"
 import Constants from "../constants/config"
 import { GetQuizQuestionIndexes } from "../utils/style"
 import list from "../jsons/transfer.json"
-import logo from "../jsons/team-logo.json"
+import logo from "../constants/images"
 import styles from "../styles/template.module.css"
 
 const selectedIndex = GetQuizQuestionIndexes(Constants.NUMBER_OF_QUESTIONS, list.length)

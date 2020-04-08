@@ -13,7 +13,7 @@ import {
 import tick from "../images/tick.svg"
 import cross from "../images/cross.svg"
 import Constants from "../constants/config"
-import logo from "../jsons/team-logo.json"
+import logo from "../constants/images"
 import styles from "../styles/template.module.css"
 import styles2 from "../styles/result.module.css"
 
