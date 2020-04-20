@@ -85,7 +85,7 @@ class Template extends Component {
 								/>
 								<datalist id="players">
 									{
-										data.map(({ player_name }) => <option key={player_name} value={player_name} />)
+										list.map(({ player_name }) => <option key={player_name} value={player_name} />)
 									}
 								</datalist>
 							</div>
