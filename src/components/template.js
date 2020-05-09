@@ -5,6 +5,7 @@ import Layout from "./layout"
 import ProgressBar from "./progress-bar"
 import SEO from "./seo"
 import Result from "./result"
+import Autosuggest from "./autosuggest"
 import Constants from "../constants/config"
 import { GetQuizQuestionIndexes } from "../utils/style"
 import list from "../jsons/transfer.json"
@@ -57,7 +58,7 @@ class Template extends Component {
 								}
 							</div>
 							<CountdownCircleTimer
-								isPlaying
+								// isPlaying
 								durationSeconds={Constants.TIME_FOR_EACH_QUESTION}
 								colors={[["#00AA00", 0.5], ["#A30000"]]}
 								renderTime={renderTime}
@@ -72,7 +73,12 @@ class Template extends Component {
 							/>
 							<div className={styles.inputWrapper}>
 								I am
-                <input
+								<Autosuggest
+									value={this.state.currentAnswer}
+									onChange={(value) => this.saveInput(value)}
+									list={list.map(({ player_name }) => ({ name: player_name }))}
+								/>
+								{/* <input
 									list="players"
 									name="input_player"
 									ref={input => { this.input = input; return input && input.focus() }}
@@ -87,7 +93,7 @@ class Template extends Component {
 									{
 										list.map(({ player_name }) => <option key={player_name} value={player_name} />)
 									}
-								</datalist>
+								</datalist> */}
 							</div>
 							<div
 								role="button"
