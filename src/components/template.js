@@ -32,7 +32,8 @@ const renderTime = value => {
 class Template extends Component {
 	state = {
 		currentQuestion: 0,
-		currentAnswer: ""
+		currentAnswer: "",
+		isDisabled: false
 	}
 
 	renderPage = () => (
@@ -58,14 +59,14 @@ class Template extends Component {
 								}
 							</div>
 							<CountdownCircleTimer
-								// isPlaying
+								isPlaying
 								durationSeconds={Constants.TIME_FOR_EACH_QUESTION}
 								colors={[["#00AA00", 0.5], ["#A30000"]]}
 								renderTime={renderTime}
 								strokeWidth={5}
 								size={140}
 								onComplete={() => {
-									this.input.disabled = true
+									this.setIsDisabled(true)
 									setTimeout(() => this.goToNextQuestion(), Constants.TIME_INTERVAL_BETWEEN_QUESTIONS)
 									return [false, Constants.TIME_INTERVAL_BETWEEN_QUESTIONS]
 								}}
@@ -77,6 +78,8 @@ class Template extends Component {
 									value={this.state.currentAnswer}
 									onChange={(value) => this.saveInput(value)}
 									list={list.map(({ player_name }) => ({ name: player_name }))}
+									isDisabled={this.state.isDisabled}
+									submit={this.goToNextQuestion}
 								/>
 								{/* <input
 									list="players"
@@ -118,7 +121,7 @@ class Template extends Component {
 	goToNextQuestion = () => {
 		const { currentAnswer, currentQuestion } = this.state
 		data[currentQuestion].answer = currentAnswer
-		this.input.disabled = false
+		this.setIsDisabled(false)
 		this.setState((prevState) => {
 			return {
 				currentQuestion: prevState.currentQuestion + 1,
@@ -126,6 +129,10 @@ class Template extends Component {
 			};
 		})
 	}
+
+	setIsDisabled = (value) => this.setState(() => ({
+		isDisabled: value
+	}))
 
 	saveInput = (value) => {
 		this.setState(() => {
