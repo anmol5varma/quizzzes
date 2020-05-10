@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/quizzzes`,
   siteMetadata: {
     title: `QUIZZZES`,
-    description: `Take football transfer quizes, guess players based on the clubs they have been and beat your friends to show your true power!`,
+    description: `Take football transfer quiz, guess players based on the clubs they have been and beat your friends to show your true power!`,
     author: `@anmol5varma`,
   },
   plugins: [
